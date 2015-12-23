@@ -1,0 +1,22 @@
+﻿<%@ CodeTemplate Language="C#" TargetLanguage="C#" Description="Testing Template Creation"%>
+<%@ Property Name="Author" Type="System.String" Description="Author of this clss." %>
+<%@ Property Name="Description" Type="System.String" Description="Description of what this class does." %>
+<%@ Property Name="Namespace" Type="System.String" Description="Namespace for this class." %>
+<%@ Property Name="Classname" Type="System.String" Description="Name of this class." %>
+<%@ Property Name="ClassProperty" Type="System.String" Description="Single Get/Set Property." %>
+
+//Author : <%= Author %>
+//Date : <%= DateTime.Now.ToLongDateString() %>
+//Description : <%= Description %>
+
+namespace <%= Namespace %>
+{
+    public class <%= Classname %>
+    {
+        public string <%= ClassProperty %> {get;set;}
+        public void MyFunction()
+        {
+        
+        }
+    }
+}
